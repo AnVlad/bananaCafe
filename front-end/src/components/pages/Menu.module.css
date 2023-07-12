@@ -1,0 +1,12 @@
+.menu-list {
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.menu-item {
+  display: contents;
+  margin-bottom: 30px;
+}

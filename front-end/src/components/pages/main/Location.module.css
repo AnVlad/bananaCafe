@@ -1,0 +1,14 @@
+.map-wrapper {
+  margin: 30px;
+  text-align: center;
+}
+
+.map {
+  display: inline-block;
+
+  margin: 20px;
+  background-color: gray;
+  max-width: 800px;
+  width: 100%;
+  height: 500px;
+}

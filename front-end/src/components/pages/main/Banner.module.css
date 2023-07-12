@@ -1,0 +1,42 @@
+.banner {
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner section {
+  padding: 5px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+.banner h2 {
+  text-align: center;
+}
+
+.banner-img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 5%;
+  margin-top: 20px;
+}
+
+.start-order {
+  display: flex;
+  align-items: baseline;
+  margin-top: 60px;
+}
+
+.delivery {
+}
+
+.menu-button {
+  display: flex;
+  justify-content: center;
+}

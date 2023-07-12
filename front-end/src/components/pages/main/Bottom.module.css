@@ -1,0 +1,59 @@
+.bottom {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bottom-information {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+.address {
+  max-width: 380px;
+}
+
+.bottom h4 {
+  text-align: center;
+}
+
+.company {
+}
+
+.icons {
+  display: flex;
+}
+
+.icons svg {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  margin: 0 20px;
+  box-shadow: 0px 4px 12px 0px rgba(29, 29, 29, 0.15);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.icons svg:hover {
+  background-color: #ffcb45;
+  cursor: pointer;
+  box-shadow: 0px 4px 24px 0px rgba(29, 29, 29, 0.25);
+}
+
+.bottom-break {
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.bottom-break p {
+  margin: 0;
+}
+
+.copyright-text {
+  font-size: 16px;
+  padding: 10px 0 10px;
+}

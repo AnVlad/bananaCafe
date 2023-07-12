@@ -1,0 +1,27 @@
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  border-radius: 20px;
+  overflow: auto;
+}
+
+.images .image {
+  flex-basis: calc(50% - 5px);
+}
+
+.images .image img {
+  width: 100%;
+  height: auto;
+}
+
+.information {
+  text-align: -webkit-center;
+}

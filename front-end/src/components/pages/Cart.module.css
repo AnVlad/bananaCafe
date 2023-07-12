@@ -1,0 +1,43 @@
+.cart {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-bottom: 12vh;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 1px solid black;
+  width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+
+  height: 86vh;
+  max-height: 1000px;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow: scroll;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  height: 86vh;
+  max-height: 1000px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #9392923d;
+}
