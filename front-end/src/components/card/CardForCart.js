@@ -27,6 +27,8 @@ function CardForCart({ title, description, prices, quantity, image, card }) {
     dispatch(deleteFromCart(card));
   };
 
+  console.log((prices[0] * quantity).toFixed(2));
+
   return (
     <div className={style.card}>
       <div className={style['image']}>
@@ -36,13 +38,11 @@ function CardForCart({ title, description, prices, quantity, image, card }) {
         <h2 className={style.title}>{title}</h2>
         <p className={style.description}>{description}</p>
         <div className={style['bottom-card']}>
-          <p className={style.price}>{prices[0].normal} $</p>
+          <p className={style.price}>{prices[0]} $</p>
           <p className={style.price}> x </p>
           <p className={style.price}> {quantity} </p>
           <p className={style.price}> = </p>
-          <p className={style.price}>
-            {(prices[0].normal * quantity).toFixed(2)} $
-          </p>
+          <p className={style.price}>{(prices[0] * quantity).toFixed(2)} $</p>
         </div>
         <div className={style['bottom-card']}>
           <button onClick={reduceQuantityInCart}>{'<'}</button>

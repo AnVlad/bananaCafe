@@ -1,16 +1,26 @@
 import './App.css';
 
 import { RouterProvider } from 'react-router-dom';
-import { Provider } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import router from './routes/router';
-import { store } from './store';
+import { useEffect } from 'react';
+import axios from 'axios';
+import { setMenuList } from './slices/menuListSlice';
 
 function App() {
-  return (
-    <Provider store={store}>
-      <RouterProvider router={router} />
-    </Provider>
-  );
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const getList = async () => {
+      const result = await axios.get('http://localhost:4000');
+      console.log(result.data);
+
+      dispatch(setMenuList(result.data));
+    };
+    getList();
+  }, []);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;

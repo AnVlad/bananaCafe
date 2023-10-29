@@ -27,8 +27,7 @@ function Cart() {
           Total price:{' '}
           {cart
             .reduce(
-              (prev, current) =>
-                prev + +current.prices[0].normal * +current.quantity,
+              (prev, current) => prev + +current.prices[0] * +current.quantity,
               0
             )
             .toFixed(2)}

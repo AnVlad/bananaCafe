@@ -1,28 +1,20 @@
-import React, { useEffect, useState } from 'react';
 import Wrapper from '../helper/Wrapper';
 import Card from '../card/Card';
-import axios from 'axios';
 
 import style from './Menu.module.css';
+import { useSelector } from 'react-redux';
 
 function Menu() {
-  const [list, setList] = useState(null);
-
-  useEffect(() => {
-    const getList = async () => {
-      const result = await axios.get('http://localhost:4000/food');
-      setList(result.data);
-    };
-    getList();
-  }, []);
+  const menuList = useSelector((state) => state.menu);
+  console.log(menuList);
 
   return (
     <>
       <Wrapper>
         <h1>Pancakes</h1>
         <div className={style['menu-list']}>
-          {list
-            ? list
+          {menuList.length
+            ? menuList
                 .filter((elem) => elem.type === 'pancake')
                 .map((elem) => {
                   return (
@@ -35,8 +27,8 @@ function Menu() {
         </div>
         <h1>sweet pancakes</h1>
         <div className={style['menu-list']}>
-          {list
-            ? list
+          {menuList.length
+            ? menuList
                 .filter((elem) => elem.type === 'sweet-pancake')
                 .map((elem) => {
                   return (
@@ -49,8 +41,8 @@ function Menu() {
         </div>
         <h1>ice-cream cocktails</h1>
         <div className={style['menu-list']}>
-          {list
-            ? list
+          {menuList.length
+            ? menuList
                 .filter((elem) => elem.type === 'ice-cream-cocktail')
                 .map((elem) => {
                   return (

@@ -71,7 +71,7 @@ function Card({ title, description, image, prices, id, card }) {
           )}
         </div>
         <div className={style['bottom-card']}>
-          <p className={style.price}>{prices[0].normal}</p>
+          <p className={style.price}>{prices[0]} $</p>
           <button className={style['add-to-favorite']}>
             {false ? (
               <svg
