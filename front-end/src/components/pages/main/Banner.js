@@ -12,7 +12,7 @@ function Banner() {
         <img
           className={style['banner-img']}
           src='https://scontent-hel3-1.xx.fbcdn.net/v/t39.30808-6/356086875_275941101777378_3124503751055486398_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=VUzVWRs4s9MAX_XkfOi&_nc_ht=scontent-hel3-1.xx&oh=00_AfC4LDr7ry2qSBnazyIqvaYvZLFnGnlcvu4dXD-_EbciWQ&oe=64A497CD'
-          alt='pancake'
+          alt='/pancake/ it is a temporal image-link, please set the updated link'
         />
       </section>
       <section>
